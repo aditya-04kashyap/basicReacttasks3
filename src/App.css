@@ -1,38 +1,67 @@
+/* App.css */
 .App {
+  text-align: center;
+  padding: 20px;
+}
+
+.color-picker {
+  display: inline-block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 30%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.color-list {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.color-item {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.color-item:hover {
+  border: 2px solid #333;
+}
+
+p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Add this style to reset the background color button */
+.reset-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 30%;
+}
+
+.reset-button:hover {
+  background-color: #444;
 }
